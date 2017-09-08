@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!--
+XML MIDTERM
+   Transportation in NYC
+   Author: Jeremy Velarde
+   Date:   10/20/2016
+   File: public.xml (SPECIFICALLY TO BE USED AGAINST public1.xsd)
+   REQ. 3
+-->      
+<!DOCTYPE transportations SYSTEM "public.dtd"> <!-- REQ. 4 -->
+
+<transportations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	  xsi:noNamespaceSchemaLocation="public1.xsd">
+	  <!-- REQ. 6 -->
+	  <!--no namespace, as this was created prior to publicprivate.xml-->
+	  
+	<transportation>
+		<transport>
+			<method>Train</method>
+		</transport>
+		<location>Queens</location>
+		<destination>Manhattan</destination>
+		<train type="peak" direction="west">
+			<trainFrom>Jamaica</trainFrom>
+			<trainTo>Penn Station</trainTo>
+		</train>
+	</transportation>
+	
+	<transportation>
+		<transport>
+			<method>Subway</method>
+		</transport>
+		<location>Penn Station</location>
+		<destination>Times Square</destination>
+		<subway>
+				<direction>Uptown: 34th - 42nd</direction>
+		</subway>
+	</transportation>
+		
+	<transportation>
+		<transport>
+			<method>Subway</method>
+		</transport>
+		<location>Times Square</location>
+		<destination>Empire State Building</destination>
+		<subway>
+				<direction>Downtown: 49th - 34th</direction>
+		</subway>
+	</transportation>	
+	
+	<transportation>	
+		<transport>
+			<method>Train</method>
+		</transport>
+		<location>Manhattan</location>
+		<destination>Queens</destination>
+		<train type="offpeak" direction="east">
+			<trainFrom>Penn Station</trainFrom>
+			<trainTo>Jamaica</trainTo>
+		</train>
+	</transportation>
+	
+</transportations>

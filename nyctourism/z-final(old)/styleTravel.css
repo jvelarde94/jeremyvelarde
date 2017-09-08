@@ -1,0 +1,55 @@
+/*
+   XML Final
+   Transportation in NYC - Instance document
+   Author: Jeremy Velarde
+   Date:   11/21/2016
+   File: styleTravel.css
+*/
+head{
+	text-align: center;
+}
+body{
+	text-align: center;
+	/*
+	background-image: url("images/banner.jpg");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    */
+}
+body h1{
+	text-align: center;
+}
+.navbar{
+	width: 100%;
+}
+
+.navbar ul{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    background-color: #f1f1f1;
+}
+
+.navbar li{
+	display: inline-block;
+}
+
+.navbar li a{
+	/*
+	display: block;
+	text-align: center;
+	font-size:20px;
+	text-decoration: none;
+	width: 60px;
+	*/
+    display: block;
+    color: #000;
+    padding: 30px 35px;
+    text-decoration: none;
+}
+.navbar li a:hover {
+    background-color: #555;
+    color: white;
+}

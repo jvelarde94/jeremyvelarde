@@ -1,0 +1,91 @@
+
+
+.pagewrapper{padding:50px 100px;}
+body h1{font-size:30px; font-weight:bold;}
+body h2{font-size:28px; font-weight:bold;}
+body{font-family: "Times New Roman", Times, serif; cursor:default;}
+
+/************** navbar ******************/
+.navbar{font-size:15px; font-weight:bold;}
+.navbar span.navbar-brand:hover{color:#9d9d9d; background-color:transparent; cursor:default;}
+.navbar ul li{list-style-type:none; margin-left:5px; margin-right:5px;}
+.navbar ul li span.caret-right{
+	display:inline-block; width:0; height:0; margin-top:21px; color:#9d9d9d;
+	border-top:4px solid transparent; 
+	border-bottom:4px solid transparent; 
+	border-left:4px solid;
+}
+
+@media screen and (max-width:1180px){.navbar {font-size:13px;}}
+@media screen and (max-width:1060px){.navbar ul li{margin-left:0; margin-right:0;}}
+@media screen and (max-width:1000px){.navbar {font-size:12px;}}
+/****************************************/
+
+/********** Section - About Me **********/
+/*left*/
+#aboutme .personalpic img{ margin-top:30px; margin-bottom:30px; height:500px; }
+
+@media screen and (max-width:1328px){
+	#aboutme .personalpic {margin-top:100px;}
+	#aboutme .personalpic img{height:450px}
+}
+@media screen and (max-width:1230px){#aboutme .personalpic img{height:400px;}}
+@media screen and (max-width:1180px){ 
+	#aboutme .personalpic {margin-top:150px;}
+	#aboutme .personalpic img{height:350px;} 
+}
+
+
+/*************** Middle *******************/
+#aboutme .about{margin:0 30px 30px 30px;}
+#aboutme .name{text-align:center; margin-bottom:30px; font-size:50px;}
+#aboutme .goal{font-size:18px; text-align:center; line-height: 30px;}
+#aboutme .goal-box{width:auto; height:auto; border:2px solid #000; padding:15px 50px;}
+#aboutme .about-title{text-align:center; margin-bottom:20px;}
+#aboutme .title{font-size:28px; font-weight:bold;}
+#aboutme .info{text-align:left; font-size:18px;}
+
+#aboutme .about hr.horizontal-divider{width:50px; height:1px; background-color:#000; margin-top:10px;}
+
+@media screen and (max-width:1328px){ #aboutme .about {margin-top:100px;}}
+@media screen and (max-width:1180px){ #aboutme .about {margin-top:150px;}}
+@media screen and (max-width:992px){#aboutme .about {margin-top:0;}}
+/******************************************/
+
+
+/*************** Right *******************/
+#aboutme .qualifications{margin:30px;}
+#aboutme .qualifications-title{text-align:center; margin-bottom:20px;}
+#aboutme .qualifications .download-button{background-color:#000; border:none; color:#9d9d9d; font-size:14px; font-weight:bold; padding:20px 40px; text-align:center; display:inline-block; text-decoration:none; cursor:pointer;}
+#aboutme .qualifications .download-button:hover{color:#fff;}
+
+#aboutme .qualifications hr.horizontal-divider{width:50px; height:1px; background-color:#000; margin-top:10px;}
+
+@media screen and (max-width:1328px){#aboutme .qualifications{margin-top:100px;}}
+@media screen and (max-width:1180px){#aboutme .qualifications{margin-top:150px;}}
+@media screen and (max-width:992px){
+	#aboutme .qualifications {margin-top:0;}
+	#aboutme .qualifications .download-button{margin-left:235px; margin-right:235px;}
+}
+/******************************************/
+
+
+/********** Section - Internship **********/
+#experience{ text-align:center; }
+#experience .experience-title{margin-top:20px; margin-bottom:20px;}
+#experience .title{font-size:28px; font-weight:bold;}
+#experience .info{text-align:left; font-size:18px;}
+#experience .card{width:258.83px; height:173px; box-shadow:0 5px 10px 0 #000; transition:0.5s; display:inline-block; margin:10px 10px 10px 10px;}
+#experience .card-container{background-color:#222; padding:5px 20px;}
+#experience .card-title{font-size:15px; font-weight:bold; color:#9d9d9d;}
+#experience .card:hover>.card-container>.card-title{color:#fff;}
+
+#experience hr.horizontal-divider{width:50px; height:1px; background-color:#000; margin-top:10px;}
+#experience hr.horizontal-divider-2{display:none;}
+#experience hr.vertical-divider{width:1px; height:500px; background-color:#000;}
+
+@media screen and (max-width:992px){
+	#experience hr.vertical-divider{display:none;}
+	#experience hr.horizontal-divider-2{display:inline-block; width:50%; height:1px; background-color:#000; margin-top:50px; margin-bottom:50px;}
+}
+/******************************************/

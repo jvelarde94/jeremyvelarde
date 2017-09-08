@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!--
+XML MIDTERM
+   Transportation in NYC
+   Author: Jeremy Velarde
+   Date:   10/20/2016
+   File: private.xml (SPECIFICALLY TO BE USED AGAINST private1.xsd)
+-->
+<privateTransportation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	  xsi:noNamespaceSchemaLocation="private1.xsd">
+	  <!--no namespace, as this was created prior to publicprivate.xml-->
+
+		<transportation>
+			<transport>
+				<method>Car</method>
+			</transport>
+			<location>Queens</location>
+			<destination>Manhattan</destination>
+			<eta>30-45 minutes</eta>
+		</transportation>
+
+		<transportation>
+			<transport>
+				<method>Bike</method>
+			</transport>
+			<location>Penn Station</location>
+			<destination>Times Square</destination>
+			<eta>10 minutes</eta>
+		</transportation>
+		
+		<transportation>
+			<transport>
+				<method>Walk</method>
+			</transport>
+			<location>Penn Station</location>
+			<destination>Times Square</destination>
+			<eta>20 minutes</eta>
+		</transportation>
+		
+</privateTransportation>

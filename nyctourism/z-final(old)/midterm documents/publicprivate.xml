@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!--
+   XML Midterm
+   Transportation in NYC - Instance document
+   Author: Jeremy Velarde
+   Date:   10/20/2016
+   File: midterm.xml
+   REQ. 11
+-->
+<pub:transportations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	  xmlns:pub="http://example.com/transportation/public"
+	  xsi:schemaLocation="http://example.com/transportation/public public.xsd">
+	  <!-- namespace for public.xsd to create compound document with "pub" prefix-->
+	  
+	<pub:transportation>
+		<pub:transport>
+			<pub:method>Train</pub:method>
+		</pub:transport>
+		<pub:location>Queens</pub:location>
+		<pub:destination>Manhattan</pub:destination>
+		<pub:train pub:type="peak" pub:direction="west"> <!-- prefix for attributes as per no default namespace -->
+			<pub:trainFrom>Jamaica</pub:trainFrom>
+			<pub:trainTo>Penn Station</pub:trainTo>
+		</pub:train>
+	</pub:transportation>
+	
+	<pub:transportation>
+		<pub:transport>
+			<pub:method>Subway</pub:method>
+		</pub:transport>
+		<pub:location>Penn Station</pub:location>
+		<pub:destination>Times Square</pub:destination>
+		<pub:subway>
+				<pub:direction>Uptown: 34th - 42nd</pub:direction>
+		</pub:subway>
+	</pub:transportation>
+		
+	<pub:transportation>
+		<pub:transport>
+			<pub:method>Subway</pub:method>
+		</pub:transport>
+		<pub:location>Times Square</pub:location>
+		<pub:destination>Empire State Building</pub:destination>
+		<pub:subway>
+				<pub:direction>Downtown: 49th - 34th</pub:direction>
+		</pub:subway>
+	</pub:transportation>	
+	
+	<pub:transportation>	
+		<pub:transport>
+			<pub:method>Train</pub:method>
+		</pub:transport>
+		<pub:location>Manhattan</pub:location>
+		<pub:destination>Queens</pub:destination>
+		<pub:train pub:type="offpeak" pub:direction="east"> <!-- prefix for attributes as per no default namespace -->
+			<pub:trainFrom>Penn Station</pub:trainFrom>
+			<pub:trainTo>Jamaica</pub:trainTo>
+		</pub:train>
+	</pub:transportation>
+	
+		<pri:privateTransportation xmlns:pri="http://example.com/transportation/private"
+								xsi:schemaLocation="http://example.com/transportation/private private.xsd">
+		<!-- namespace for private.xsd to create compound document with "pri" prefix-->
+		
+			<pri:transportation>
+					<pri:transport>
+						<pri:method>Car</pri:method>
+					</pri:transport>
+					<pri:location>Queens</pri:location>
+					<pri:destination>Manhattan</pri:destination>
+					<pri:eta>30-45 minutes</pri:eta>
+			</pri:transportation>
+
+			<pri:transportation>
+				<pri:transport>
+					<pri:method>Bike</pri:method>
+				</pri:transport>
+				<pri:location>Penn Station</pri:location>
+				<pri:destination>Times Square</pri:destination>
+				<pri:eta>10 minutes</pri:eta>
+			</pri:transportation>
+			
+			<pri:transportation>
+				<pri:transport>
+					<pri:method>Walk</pri:method>
+				</pri:transport>
+				<pri:location>Penn Station</pri:location>
+				<pri:destination>Times Square</pri:destination>
+				<pri:eta>20 minutes</pri:eta>
+			</pri:transportation>
+			
+		</pri:privateTransportation>
+	
+</pub:transportations>
