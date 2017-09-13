@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<title>Jeremy Velarde - Website Developer/Designer</title>
-		<!-- style.css -->
+		<!-- Link to Style Sheet -->
 		<link rel="stylesheet" href="style.css">
 
 		<!-- Bootstrap -->
@@ -22,7 +22,7 @@
 					<ul class="nav navbar-nav">
 						<li class="active"><a href="#aboutme">About</a></li>
 						<li><span class="caret-right"></span></li>
-						<li><a href="#experience">Developer/Designer Experience</a></li>
+						<li><a href="#devExperience">Developer/Designer Experience</a></li>
 						<li><a href="#">Technical Experience</a></li>
 						<!--<li><a href="https://www.linkedin.com/in/jeremyvelarde/">LinkedIn</a></li>-->
 					</ul>
@@ -53,7 +53,7 @@
 							<p class="goal">
 								Hi.<br>
 								My name is Jeremy Velarde and this is my personal website to display my work as a Website Developer.<br>
-								I am currently pursuing a position in the Long Island/NYC area as an entry-level Web Developer/Designer.
+								I am currently pursuing an entry-level position in the Long Island/NYC area as an entry-level Web Developer/Designer.
 							</p>
 						</div>
 						<div class="about-title">
@@ -95,13 +95,12 @@
 			</div>
 		</section>
 
-		<br><br><br><br>
 
-		<section id="experience">
+		<section id="devExperience">
 			<div class="row">
 				<div class="col-md-12">
 					<div class="experience-title">
-						<h2 class="title">Development / Design Experience:</span>
+						<h2 class="title">Development / Design Experience:</h2>
 						<hr class="horizontal-divider">
 					</div>
 				</div>
@@ -111,7 +110,7 @@
 				<div class="col-md-5">
 					<p class="info">
 						While earning my degree, I took a broad range of classes to enhance my technical understanding and learn various languages including <i>C++, Java, HTML, CSS, JavaScript/jQuery, XML/XSLT,</i> and <i>PHP.</i> <br><br>
-						Here are the last two projects I completed during my last year at Farmingdale: 
+						Here are the last two projects I completed during my last semester at Farmingdale: 
 					</p>
 
 					<a href="organizer/index.html">
@@ -173,15 +172,98 @@
 				</div>
 			</div>
 		</section>
-	</div>
 
+		<section id="technicalExperience">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="experience-title">
+						<h2 class="title">Technical Experience:</h2>
+						<hr class="horizontal-divider">
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-2">
+				</div>
+
+				<div class="col-md-4">
+					<div id="wrapper">
+						<div class="skill_name" id="skill_html">HTML</div>
+						<div class="skillbar_wrapper">
+							<div class="skillbar_bar" id="skillbar_html"></div>
+							<div class="skill_bar_percent">80%</div>
+						</div>
+
+						<div class="skill_name" id="skill_css">CSS</div>
+						<div class="skillbar_wrapper">
+							<div class="skillbar_bar" id="skillbar_css"></div>
+							<div class="skill_bar_percent">85%</div>
+						</div>
+
+						<div class="skill_name" id="skill_js-jquery">JS/jQuery</div>
+						<div class="skillbar_wrapper">
+							<div class="skillbar_bar" id="skillbar_js-jquery"></div>
+							<div class="skill_bar_percent">20%</div>
+						</div>
+
+						<div class="skill_name" id="skill_xml">XML</div>
+						<div class="skillbar_wrapper">
+							<div class="skillbar_bar" id="skillbar_xml"></div>
+							<div class="skill_bar_percent">30%</div>
+						</div>
+
+						<div class="skill_name" id="skill_php-mysql">PHP/MySQL</div>
+						<div class="skillbar_wrapper">
+							<div class="skillbar_bar" id="skillbar_php-mysql"></div>
+							<div class="skill_bar_percent">40%</div>
+						</div>
+
+						<div class="skill_name" id="skill_wordpress">WordPress</div>
+						<div class="skillbar_wrapper">
+							<div class="skillbar_bar" id="skillbar_wordpress"></div>
+							<div class="skill_bar_percent">70%</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="info-box">
+						<p class="info">
+							Lorem ipsum fucky fuck fucky fuck fucky fuck fucky fuck fucky fuck fucky fuck fucky fuck fucky fuck 
+							fucky fuck fucky fuck fucky fuck fucky fuck fucky fuck 
+						</p>
+					</div>
+				</div>
+
+				<div class="col-md-2">
+				</div>
+			</div>
+		</section>
+
+	</div>
 
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="js/bootstrap.min.js"></script>
+		<!-- jQuery for Skill bars -->
+		<script src="js/jquery-3.2.1.min.js"></script>
 
-		<!-------------------------------- Smooth Scrolling to sections ------------------------------->
+		<!-- Skill bars -->
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#skillbar_html").animate({width:'80%'},1500);
+				$("#skillbar_css").animate({width:'85%'},1500);
+				$("#skillbar_js-jquery").animate({width:'20%'},1500);
+				$("#skillbar_xml").animate({width:'30%'},1500);
+				$("#skillbar_php-mysql").animate({width:'40%'},1500);
+				$("#skillbar_wordpress").animate({width:'70%'},1500);
+			});
+		</script>
+		<!-- -->
+
+		<!--Smooth Scrolling to sections -->
 		<script>
 			$(document).ready(function(){
 			  $("a").on('click', function(event) {
@@ -197,7 +279,7 @@
 			  });
 			});
 		</script>
-		<!----------------------------------------------------------------------------------------- -->
+		<!-- -->
 	</body>
 
 	<footer>

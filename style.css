@@ -1,6 +1,6 @@
 
 
-.pagewrapper{padding:50px 100px;}
+.pagewrapper{padding:10px 100px;}
 body h1{font-size:30px; font-weight:bold;}
 body h2{font-size:28px; font-weight:bold;}
 body{font-family: "Times New Roman", Times, serif; cursor:default; 
@@ -29,8 +29,11 @@ body{font-family: "Times New Roman", Times, serif; cursor:default;
 @media screen and (max-width:1000px){.navbar {font-size:12px;}}
 /****************************************/
 
-/********** Section - About Me **********/
-/*left*/
+
+/********** Section - About Me ************/
+#aboutme {margin-bottom:50px;}
+
+/************** Left **********************/
 #aboutme .personalpic img{ margin-top:30px; margin-bottom:30px; height:500px; }
 
 @media screen and (max-width:1328px){
@@ -42,8 +45,7 @@ body{font-family: "Times New Roman", Times, serif; cursor:default;
 	#aboutme .personalpic {margin-top:150px;}
 	#aboutme .personalpic img{height:350px;} 
 }
-
-
+/******************************************/
 /*************** Middle *******************/
 #aboutme .about{margin:0 30px 30px 30px;}
 #aboutme .name{text-align:center; margin-bottom:30px; font-size:50px;}
@@ -59,8 +61,6 @@ body{font-family: "Times New Roman", Times, serif; cursor:default;
 @media screen and (max-width:1180px){ #aboutme .about {margin-top:150px;}}
 @media screen and (max-width:992px){#aboutme .about {margin-top:0;}}
 /******************************************/
-
-
 /*************** Right *******************/
 #aboutme .qualifications{margin:30px;}
 #aboutme .qualifications-title{text-align:center; margin-bottom:20px;}
@@ -79,21 +79,62 @@ body{font-family: "Times New Roman", Times, serif; cursor:default;
 
 
 /********** Section - Internship **********/
-#experience{ text-align:center; }
-#experience .experience-title{margin-top:20px; margin-bottom:20px;}
-#experience .title{font-size:28px; font-weight:bold;}
-#experience .info{text-align:left; font-size:18px;}
-#experience .card{width:258.83px; height:173px; box-shadow:0 5px 10px 0 #000; transition:0.5s; display:inline-block; margin:10px 10px 10px 10px;}
-#experience .card-container{background-color:#222; padding:5px 20px;}
-#experience .card-title{font-size:15px; font-weight:bold; color:#9d9d9d;}
-#experience .card:hover>.card-container>.card-title{color:#fff;}
+#devExperience{text-align:center; margin-bottom:50px;}
+#devExperience .experience-title{margin-top:20px; margin-bottom:20px;}
+#devExperience .title{font-size:28px; font-weight:bold;}
+#devExperience .info{text-align:left; font-size:18px;}
+#devExperience .card{width:258.83px; height:173px; box-shadow:0 5px 10px 0 #000; transition:0.5s; display:inline-block; margin:10px 10px 10px 10px;}
+#devExperience .card-container{background-color:#222; padding:5px 20px;}
+#devExperience .card-title{font-size:15px; font-weight:bold; color:#9d9d9d;}
+#devExperience .card:hover>.card-container>.card-title{color:#fff;}
 
-#experience hr.horizontal-divider{width:150px; height:1px; background-color:#000; margin-top:10px;}
-#experience hr.horizontal-divider-2{display:none;}
-#experience hr.vertical-divider{width:1px; height:500px; background-color:#000;}
+#devExperience hr.horizontal-divider{width:150px; height:1px; background-color:#000; margin-top:10px;}
+#devExperience hr.horizontal-divider-2{display:none;}
+#devExperience hr.vertical-divider{width:1px; height:500px; background-color:#000;}
 
 @media screen and (max-width:992px){
-	#experience hr.vertical-divider{display:none;}
-	#experience hr.horizontal-divider-2{display:inline-block; width:50%; height:1px; background-color:#000; margin-top:50px; margin-bottom:50px;}
+	#devExperience hr.vertical-divider{display:none;}
+	#devExperience hr.horizontal-divider-2{display:inline-block; width:50%; height:1px; background-color:#000; margin-top:50px; margin-bottom:50px;}
 }
 /******************************************/
+
+
+/********** Section - Technical Experience *********/
+#technicalExperience{text-align:center;}
+#technicalExperience .experience-title{margin-top:20px; margin-bottom:20px;}
+#technicalExperience .title{font-size:28px; font-weight:bold;}
+
+/************************* Skill bar ***************************/
+#wrapper{margin:0 auto; padding:0px; text-align:center; width:995px;}
+#wrapper h1{margin-top:100px; font-size:55px; color:#2E64FE;}
+#wrapper h1 a{color:#2E64FE;font-size:18px;}
+
+.skill_name{margin-left:0; width:100px; height:40px; line-height:40px; font-weight:bold; 
+			font-size:14px; color:white; clear:both; float:left; border-radius:3px 0px 0px 3px;}
+.skillbar_wrapper{float:left; position:relative; display:block; margin-right:15px; margin-bottom:15px; width:350px; 
+				  background-color:#E6E6E6; height:40px; border-radius:0px 3px 3px 0px;}
+.skill_bar_percent{position:absolute; right:10px; top:0; font-size:14px; height:35px; line-height:35px; color:black;}
+
+#skill_html{background-color:mediumseagreen;}
+#skill_css{background-color:skyblue;}
+#skill_js-jquery{background-color:firebrick;}
+#skill_xml{background-color:cadetblue;}
+#skill_php-mysql{background-color:lightpink;}
+#skill_wordpress{background-color:steelblue;}
+
+.skillbar_bar{height:40px; width:0px; border-radius:0px 3px 3px 0px;}
+#skillbar_html{background-color:green;}
+#skillbar_css{background-color:green;}
+#skillbar_js-jquery{background-color:darkred;}
+#skillbar_xml{background-color:darkorange;}
+#skillbar_php-mysql{background-color:gold;}
+#skillbar_wordpress{background-color:yellowgreen;}
+/***************************************************************/
+
+#technicalExperience .info-box{margin:0 50px 0 50px; padding:10px;}
+#technicalExperience p.info{font-size:16px; display:inline;}
+#technicalExperience hr.horizontal-divider{width:150px; height:1px; background-color:#000; margin-top:10px;}
+
+/******************************************/
+
+
