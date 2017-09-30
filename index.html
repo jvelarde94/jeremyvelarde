@@ -13,6 +13,44 @@
 	      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	    <![endif]-->
 
+	    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- jQuery for Skill bars -->
+		<script src="js/jquery-3.2.1.min.js"></script>
+
+		<!-- Skill bars -->
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#skillbar_html").animate({width:'70%'},2000);
+				$("#skillbar_css").animate({width:'75%'},2000);
+				$("#skillbar_js-jquery").animate({width:'20%'},2000);
+				$("#skillbar_xml").animate({width:'30%'},2000);
+				$("#skillbar_php-mysql").animate({width:'40%'},2000);
+				$("#skillbar_wordpress").animate({width:'50%'},2000);
+			});
+		</script>
+		<!-- -->
+
+		<!--Smooth Scrolling to sections -->
+		<script>
+			$(document).ready(function(){
+			  $("a").on('click', function(event) {
+			    if (this.hash !== "") {
+			      event.preventDefault();
+			      var hash = this.hash;
+			      $('html, body').animate({
+			        scrollTop: $(hash).offset().top
+			      }, 800, function(){
+			        window.location.hash = hash;
+			      });
+			    }
+			  });
+			});
+		</script>
+		<!-- -->
+
 	    <section id="navbar">
 			<nav class="navbar navbar-inverse">
 				<div class="container-fluid">
@@ -37,12 +75,11 @@
 
 	<body>
 	<div class="pagewrapper">
-
 		<section id="aboutme">
 			<div class="row">
 				<div class="col-md-4">
 					<div class="personalpic">
-						<img src="pictures/me.jpg" alt="Me" class="img-responsive center-block alignnone">
+						<img src="pictures/me.jpg" alt="jeremyvelarde" class="img-responsive center-block alignnone">
 					</div>
 				</div>
 
@@ -183,7 +220,7 @@
 			</div>
 
 			<div class="row">
-				<div class="col-md-2">
+				<div class="col-md-4">
 				</div>
 
 				<div class="col-md-4">
@@ -191,25 +228,25 @@
 						<div class="skill_name" id="skill_html">HTML</div>
 						<div class="skillbar_wrapper">
 							<div class="skillbar_bar" id="skillbar_html"></div>
-							<div class="skill_bar_percent">80%</div>
+							<div class="skill_bar_percent">70%</div>
 						</div>
 
 						<div class="skill_name" id="skill_css">CSS</div>
 						<div class="skillbar_wrapper">
 							<div class="skillbar_bar" id="skillbar_css"></div>
-							<div class="skill_bar_percent">85%</div>
-						</div>
-
-						<div class="skill_name" id="skill_wordpress">WordPress</div>
-						<div class="skillbar_wrapper">
-							<div class="skillbar_bar" id="skillbar_wordpress"></div>
-							<div class="skill_bar_percent">70%</div>
+							<div class="skill_bar_percent">75%</div>
 						</div>
 
 						<div class="skill_name" id="skill_php-mysql">PHP/MySQL</div>
 						<div class="skillbar_wrapper">
 							<div class="skillbar_bar" id="skillbar_php-mysql"></div>
-							<div class="skill_bar_percent">40%</div>
+							<div class="skill_bar_percent">30%</div>
+						</div>
+
+						<div class="skill_name" id="skill_xml">XML</div>
+						<div class="skillbar_wrapper">
+							<div class="skillbar_bar" id="skillbar_xml"></div>
+							<div class="skill_bar_percent">30%</div>
 						</div>
 
 						<div class="skill_name" id="skill_js-jquery">JS/jQuery</div>
@@ -218,12 +255,20 @@
 							<div class="skill_bar_percent">20%</div>
 						</div>
 
-						<div class="skill_name" id="skill_xml">XML</div>
+						<div class="skill_name" id="skill_wordpress">WordPress</div>
 						<div class="skillbar_wrapper">
-							<div class="skillbar_bar" id="skillbar_xml"></div>
-							<div class="skill_bar_percent">30%</div>
+							<div class="skillbar_bar" id="skillbar_wordpress"></div>
+							<div class="skill_bar_percent">50%</div>
 						</div>
 					</div>
+				</div>
+
+				<div class="col-md-4">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4">
 				</div>
 
 				<div class="col-md-4">
@@ -234,71 +279,35 @@
 					</div>
 				</div>
 
-				<div class="col-md-2">
+				<div class="col-md-4">
 				</div>
 			</div>
+
+				<div class="col-md-2">
+				</div>
 		</section>
-
 	</div>
-
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<!-- Include all compiled plugins (below), or include individual files as needed -->
-		<script src="js/bootstrap.min.js"></script>
-		<!-- jQuery for Skill bars -->
-		<script src="js/jquery-3.2.1.min.js"></script>
-
-		<!-- Skill bars -->
-		<script type="text/javascript">
-			$(document).ready(function(){
-				$("#skillbar_html").animate({width:'80%'},1500);
-				$("#skillbar_css").animate({width:'85%'},1500);
-				$("#skillbar_js-jquery").animate({width:'20%'},1500);
-				$("#skillbar_xml").animate({width:'30%'},1500);
-				$("#skillbar_php-mysql").animate({width:'40%'},1500);
-				$("#skillbar_wordpress").animate({width:'70%'},1500);
-			});
-		</script>
-		<!-- -->
-
-		<!--Smooth Scrolling to sections -->
-		<script>
-			$(document).ready(function(){
-			  $("a").on('click', function(event) {
-			    if (this.hash !== "") {
-			      event.preventDefault();
-			      var hash = this.hash;
-			      $('html, body').animate({
-			        scrollTop: $(hash).offset().top
-			      }, 800, function(){
-			        window.location.hash = hash;
-			      });
-			    }
-			  });
-			});
-		</script>
-		<!-- -->
 	</body>
 
 	<footer>
-		<div class="row">
-			<div class="col-md-4">
-			</div>
-			<div class="col-md-4">
-				<section id="contact">
-				  <center>
+		<section id="footer">
+			<div class="row">
+				<div class="col-md-4">
 					<h3>Contact:</h3>
 						<address>
-							<a href="mailto:jvelarde94@gmail.com">jvelarde94@gmail.com</a>
+							<span class="email">Email:</span> <a href="mailto:jvelarde94@gmail.com">jvelarde94@gmail.com</a>
 						</address>
-				  </center>
-				</section>
-				<p>
-					<center><small>This page has been built from scratch. All content, the responsive design, and styles were done by me.</small></center>
-				</p>
+				</div>
+				<div class="col-md-4">
+					<div class="site-info-box">
+						<p id="site-info">
+							This page has been built manually, without use of a CMS. All content, the responsive design, and styles were completed solely by me..
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+				</div>
 			</div>
-			<div class="col-md-4">
-			</div>
-		</div>
+		</section>
 	</footer>
 </html>
