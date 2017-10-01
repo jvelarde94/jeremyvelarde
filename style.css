@@ -101,13 +101,17 @@ body{font-family: "Times New Roman", Times, serif; cursor:default;
 #technicalExperience{text-align:center;}
 #technicalExperience .experience-title{margin-top:20px; margin-bottom:20px;}
 #technicalExperience .title{font-size:28px; font-weight:bold;}
+#technicalExperience .info-box{margin:0 50px 0 50px; padding:20px; border:2px solid #000;}
+#technicalExperience p.info{font-size:13px; display:inline;}
+#technicalExperience hr.horizontal-divider{width:150px; height:1px; background-color:#000; margin-top:10px;}
+/**************************************************/
 
 /************* Skill bar ***************/
-#wrapper{margin:0 auto; padding:0px; text-align:center; width:995px;}
+#wrapper{margin:auto; padding:0px; text-align:center; width:565px /*995px*/;}
 
 .skill_name{margin-left:0; width:100px; height:40px; line-height:40px; font-weight:bold; 
 			font-size:14px; color:white; clear:both; float:left; border-radius:3px 0px 0px 3px;}
-.skillbar_wrapper{float:left; position:relative; display:block; margin-right:15px; margin-bottom:15px; width:350px; 
+.skillbar_wrapper{float:left; position:relative; display:block; margin-right:15px; margin-bottom:15px; width:450px; 
 				  background-color:#E6E6E6; height:40px; border-radius:0px 3px 3px 0px;}
 .skill_bar_percent{position:absolute; right:10px; top:0; font-size:14px; height:35px; line-height:35px; color:black;}
 
@@ -125,15 +129,29 @@ body{font-family: "Times New Roman", Times, serif; cursor:default;
 #skillbar_xml{background-color:darkorange;}
 #skillbar_js-jquery{background-color:darkred;}
 #skillbar_wordpress{background-color:gold;}
-/************************************/
 
-#technicalExperience .info-box{margin:0 50px 0 50px; padding:20px; border:2px solid #000;}
-#technicalExperience p.info{font-size:13px; display:inline;}
-#technicalExperience hr.horizontal-divider{width:150px; height:1px; background-color:#000; margin-top:10px;}
-/******************************************/
+/*
+@media screen and (max-width:2560px){
+	#wrapper{width:24%;}
+}
+@media screen and (max-width:1920px){
+	#wrapper{width:34%;}
+}
+@media screen and (max-width:1590px){
+	.skill_name{margin-left:-50px;}
+}
+@media screen and (max-width:1440px){
+	.skill_name{margin-left:-80px;}
+}
+@media screen and (max-width:992px){
+	.skill_name{margin-left: 120px;}
+}
+*/
+/************************************/
 
 /************ Section - Footer ********/
 #footer {text-align:center; background-color:#222; margin-top:20px; padding-top:20px;}
+#footer .row{margin-right:0;}
 #footer h3{display:inline; color:#9d9d9d;}
 #footer span.email{color:#9d9d9d;}
 #footer a{display:inline; font-weight:bold; color:#fff;}
