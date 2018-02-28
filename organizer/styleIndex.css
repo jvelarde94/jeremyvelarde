@@ -1,0 +1,18 @@
+.pagewrapper{padding:10px 100px;}
+body h1{font-size:50px; font-weight:bold;}
+body h2{font-size:25px; font-weight:bold;}
+body{font-family: "Times New Roman", Times, serif; cursor:default; 
+	
+	/* Make text un-selectable */
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Chrome / Opera */
+}
+
+.title{text-align:center; font-weight:bold; padding:150px 0 50px 0;}
+.intro{text-align:center; font-style:italic; margin:0 50px 0 50px;}
+.links{text-align:center; font-weight:bold; margin: 50px 0 50px 0;}
+.button{background-color:#000000; border:none; color:white; padding:10px 20px; text-align:center; 
+	font-size:15px;}
