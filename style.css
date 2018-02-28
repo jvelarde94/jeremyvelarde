@@ -125,7 +125,7 @@ body{font-family: "Times New Roman", Times, serif; cursor:default;
 	.skillbar_bar{height:40px; width:0px; border-radius:0px 3px 3px 0px;}
 	#skillbar_html{background-color:green;}
 	#skillbar_css{background-color:green;}
-	#skillbar_php-mysql{background-color:gold;}
+	#skillbar_php-mysql{background-color:darkorange;}
 	#skillbar_xml{background-color:darkorange;}
 	#skillbar_js-jquery{background-color:darkred;}
 	#skillbar_wordpress{background-color:gold;}
